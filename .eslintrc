@@ -1,0 +1,72 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "globals": {
+    "window": true,
+    "document": true
+  },
+  "rules": {
+    "arrow-spacing": "error",
+    "indent": ["error", 4, {"SwitchCase": 1}],
+    "curly": "off",
+    "comma-style": ["error", "last"],
+    "comma-dangle": ["error", "always-multiline"],
+    "comma-spacing": ["error"],
+    "eqeqeq": "error",
+    "eol-last": "error",
+    "no-new": "off",
+    "no-undef": "error",
+    "no-extra-semi": "error",
+    "no-multiple-empty-lines": ["error", {"max": 1, "maxEOF": 0, "maxBOF": 0}],
+    "no-use-before-define": "off",
+    "no-unused-vars": "error",
+    "no-trailing-spaces": "error",
+    "no-multi-spaces": "error",
+    "no-duplicate-case": "error",
+    "key-spacing": "error",
+    "keyword-spacing": "error",
+    "space-before-function-paren": ["error", "never"],
+    "space-before-blocks": ["error"],
+    "strict": "off",
+    "semi": ["error", "always", {"omitLastInOneLineBlock": true}],
+    "space-infix-ops": "error",
+    "quotes": ["error", "single", {"allowTemplateLiterals": true}],
+    "computed-property-spacing": ["error"],
+    "react/no-string-refs": "error",
+    "react/no-direct-mutation-state": "error",
+    "react/react-in-jsx-scope": "error",
+    "react/require-render-return": "error",
+    "react/self-closing-comp": "error",
+    "react/jsx-key": "error",
+    "react/jsx-no-undef": "error",
+    "react/jsx-uses-react": "error",
+    "react/jsx-space-before-closing": "error",
+    "react/jsx-equals-spacing": "error",
+    "react/jsx-curly-spacing": "error",
+    "react/jsx-uses-vars": "error",
+    "react/jsx-indent-props": "error",
+    "react/jsx-indent": "error",
+    "react/jsx-pascal-case": "error",
+    "react/jsx-wrap-multilines": "error",
+    "react/jsx-closing-bracket-location": "error",
+    "flowtype/semi": ["error", "always"],
+    "flowtype/boolean-style": ["error", "boolean"],
+    "flowtype/space-after-type-colon": ["error", "always"],
+    "flowtype/union-intersection-spacing": ["error", "always"]
+  },
+  "plugins": [
+    "react",
+    "flowtype"
+  ]
+}
